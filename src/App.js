@@ -2,6 +2,10 @@ import React from 'react';
 // import logo from './assets/logo.svg';
 import './App.css';
 import AppRouter from './Routes';
+import Home from './containers/Home';
+import About from './containers/About';
+import Projects from './containers/Projects';
+import Contact from './containers/Contact';
 
 function App() {
   return (
@@ -24,7 +28,10 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <AppRouter />
+      <Home/>
+      <About/>
+      <Projects/>
+      <Contact/>
     </div>
   );
 }
