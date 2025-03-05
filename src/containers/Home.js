@@ -28,7 +28,7 @@ export const Home = (props) => {
 	}
 
 	return (
-		<>
+		<Box sx={{ backgroundColor: 'black', px: { xs: 2, md: 8 }, pb:5 }}>
 			<AppBar position="static" sx={{ backgroundColor: 'black', boxShadow: 1 }}>
 				<Toolbar sx={{ m: '20px 20px 0 20px' }}>
 					{/* Logo */}
@@ -113,15 +113,20 @@ export const Home = (props) => {
 							Front-End Developer
 						</Typography>
 					</Box>
-					<Box sx={{display: "flex", justifyContent: "center", gap: 2, alignItems:'center'}}>
+					<Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, alignItems: 'center' }}>
 						{' '}
 						{socialLinks.map(({ icon, url }, index) => (
 							<img
 								key={index}
 								component="a"
 								src={icon}
-                style={{ width: "15px", height: "15px", cursor: "pointer", transition: "transform 0.3s ease" }}
-                onClick={() => window.open(url, "_blank", "noopener,noreferrer")}
+								style={{
+									width: '15px',
+									height: '15px',
+									cursor: 'pointer',
+									transition: 'transform 0.3s ease'
+								}}
+								onClick={() => window.open(url, '_blank', 'noopener,noreferrer')}
 								target="_blank"
 								rel="noopener noreferrer"
 							/>
@@ -129,7 +134,7 @@ export const Home = (props) => {
 					</Box>
 				</Box>
 			</Grid>
-		</>
+		</Box>
 	)
 }
 

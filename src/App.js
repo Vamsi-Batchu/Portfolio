@@ -6,6 +6,7 @@ import Home from './containers/Home';
 import About from './containers/About';
 import Projects from './containers/Projects';
 import Contact from './containers/Contact';
+import { Experience } from './containers/Experience';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       </header> */}
       <Home/>
       <About/>
+      <Experience/>
       <Projects/>
       <Contact/>
     </div>
